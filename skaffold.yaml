@@ -20,7 +20,7 @@ deploy:
           database.databaseName: "{{.DB_DATABASE_NAME}}"
         setValues:
           hpa.enabled: true
-          canary.enabled: true
+          canary.enabled: false
 profiles:
   - name: local
     activation:
